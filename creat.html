@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Tajawal', sans-serif;
+            background-color: darkslategrey;
+            text-align: center;
+            direction: rtl;
+            color:whitesmoke;
+        }
+        div{
+            background-color: cadetblue;
+            width: 70%;
+            height: 500px;
+            margin: auto;
+        }
+        input[type=submit]{
+            background-color: rgba(31, 118, 118, 0.664);
+            border: none;
+            border-radius: 2px;
+            color: whitesmoke;
+        }
+        form{
+            translate:0 100px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>يرجى ملئ الاستمارة التالية, لانشاء حساب خاص بك.</h1>
+    <p>نحن لانسخدم اي معلومات شخصية مثل الايميلات, سجل فقط باسمك او بلقبك او اسم مستعار.</p>
+    <div>
+    <form method="get" action="login.html">
+        <label for="user">الاسم الشخصي او اللقب</label>
+        <br>
+        <input type="text" name="user" id="user" required>
+        <br><br>
+        <label for="numberidenti">رقمك الدراسي</label required>
+        <br>
+        <input type="text" name="numberidenti" id="numberidenti" required maxlength="6" placeholder="C21920">
+        <br><br>
+        <label for="phonenumber">رقم الهاتف</label>
+        <br>
+        <input type="number" name="phonenumber" id="phonenumber" required maxlength="8">
+        <br><br>
+        <label for="password">كلمة السر</label>
+        <br>
+        <input type="password" name="password" id="password" required maxlength="5">
+        <br><br>
+        <label for="wichbg">من اي فصول BG؟</label>
+        <br>
+        <select name="wichbg" id="wichbg">
+        <option value="BGA">BGA</option>
+        <option value="BGB">BGB</option>
+        <option value="BGC">BGC</option>
+        <option value="BGD">BGD</option>
+        </select>
+        <br><br>
+        <input type="submit" value="انشئ">
+    </form>
+</div>
+</body>
+</html>

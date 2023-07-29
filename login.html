@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DimasiFST.com/login</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: darkslategrey;
+            text-align: center;
+            direction: rtl;
+            color:whitesmoke;
+        }
+        .login-form{
+            background-color: cadetblue;
+            padding: 10px;
+            border-radius: 8px;
+            width: 350px;
+            height: 240px;
+            border: 2px;
+            translate: 0 150px;
+        }
+        .submit{
+            translate: 0 20px;
+            background-color: rgba(31, 118, 118, 0.664);
+            color: whitesmoke;
+            font-family: 'Tajawal', sans-serif;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: lightslategray;
+            translate: 0 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>ملاحظة: لا يمكن لنفس المستخدم دخول السحب مرة اخرى.</h2>
+    <p>نحن لانسخدم اي معلومات شخصية مثل الايميلات, سجل فقط باسمك او بلقبك او اسم مستعار.</p>
+<div>
+    <form class="login-form" method="get" action="dessiotion.html">
+        <h1>تسجيل الدخول</h1>
+        <label for="user">اسم المستخدم:</label>
+        <br>
+        <input type="text" name="user" id="user" required>
+        <br>
+        <label for="password">كلمة السر:</label>
+        <br>
+        <input type="password" name="password" id="password" required maxlength="5">
+        <br>
+        <input class="submit" type="submit" value="تاكيد">
+    </form>
+</div>
+<br><br><br><br><br><br><br>
+<a href="creat.html"><p>ليس لديك حساب؟</p></a>
+</body>
+</html>
